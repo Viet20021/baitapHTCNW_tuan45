@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 17</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      body{
+        box-shadow: 0 0 10px black;
+        height: 33rem;
+        width: 22rem;
+        padding: 1rem;
+        margin-top: 5%;
+        margin-left: 25%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
+    <form>
+      <div>
+        <label>Full name*:<br> </label>
+        <input
+          type="text" required id="fullname" name="fullname"
+          placeholder="firstname  lastname"
+           />
+       </div>
+       
+       <div>
+        <label>Email Address*:<br> </label>
+        <input
+          type="text" id="email" name="email"
+          placeholder="EMAIL_ADDRESS"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Select Tour Package*:<br> </label>
+        <select name="tour" id="tour">
+          <option value="1">VietNam</option>
+          <option value="2">Korea</option>
+          <option value="3">USA</option>
+          <option value="4">Japan</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Arrival date*:<br> </label>
+        <input type="text" id="date" name="date" placeholder="m/d/y" required />
+      </div>
+     
+      <div>
+        <label>Number of Persons*:<br> </label>
+          <input
+            type="text"
+            id="person"
+            name="person"
+            placeholder="UNKONW_TYPE"
+            required
+          />
+      </div>
+         
+      <div>
+         What would you want to avail?*
+            <br><span>Boarding</span>
+            <input type="checkbox" id="boarding" name="boarding" />
+        
+            <br><span>Fooding</span>
+            <input type="checkbox" id="fooding" name="fooding" />
+         
+            <br><span>Sight seeting</span>
+            <input type="checkbox" id="seeting" name="seeting" />
+      </div>
+
+      <div>
+          <label>Discount Coupon code:<br> </label>
+          <input
+            type="text"
+            id="code"
+            name="code"
+            placeholder="UNKONW_TYPE"
+            required
+          />
+        </div>
+
+        <div>
+          <label>Term and conditions*:<br> </label>
+              <input type="radio" />
+              <span>I agree</span>
+              <input type="radio" />
+              <span>I disagree</span>
+        </div>
+            <button type="submit">Complete reservation</button>  
+    </form>
+  </body>
+</html>
